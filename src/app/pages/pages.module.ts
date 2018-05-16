@@ -7,22 +7,30 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 import { SharedModule} from '../shared/shared.module';
 import { PagesComponent } from './pages/pages.component';
 
+//incrementador
+import {IncrementadorComponent} from '../components/incrementador/incrementador.component';
+
+import { ChartsModule } from 'ng2-charts';
+
 @NgModule({
   declarations: [
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    PagesComponent
+    PagesComponent,
+    IncrementadorComponent
   ],
   exports:[
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    PagesComponent
+    PagesComponent,
+    IncrementadorComponent
   ],
   imports:[
     SharedModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    ChartsModule
   ]
 })
 export class PagesModule { }

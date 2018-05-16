@@ -1,0 +1,12 @@
+<h3>{{leyenda}}</h3>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button" (click)="incrementar(+5)">
+      <i class="mdi mdi-plus"></i>
+    </button>
+  </div>
+  <input name="progreso" type="number" class="form-control" [(ngModel)]="progreso" min="0" max="100" >
+  <button class="btn btn-outline-secondary" type="button" (click)="incrementar(-5)">
+    <i class="mdi mdi-minus"></i>
+  </button>
+</div>
