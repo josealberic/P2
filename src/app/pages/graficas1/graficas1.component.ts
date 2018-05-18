@@ -1,4 +1,4 @@
-import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-graficas1',
@@ -7,10 +7,6 @@ import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 })
 export class Graficas1Component implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   graficos: any = {
     'grafico1': {
@@ -39,5 +35,9 @@ export class Graficas1Component implements OnInit {
     },
   };
 
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

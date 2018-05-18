@@ -5,7 +5,7 @@ import {ProgressComponent} from './progress/progress.component';
 import {Graficas1Component} from './graficas1/graficas1.component';
 import {PagesComponent} from './pages/pages.component';
 import {NopagefoundComponent} from '../nopagefound/nopagefound.component';
-
+import {AccountSettingsComponent} from './account-settings/account-settings.component';
 
 const pagesRoutes: Routes = [
   { path: '', component: PagesComponent,
@@ -13,10 +13,11 @@ const pagesRoutes: Routes = [
       { path: 'dashboard', component: DashboardComponent },
       { path: 'progress', component: ProgressComponent },
       { path: 'graficas1', component: Graficas1Component },
+      { path: 'account-settings', component: AccountSettingsComponent },
       { path: '', redirectTo: '/dashboard', pathMatch: 'full'}
     ]
-  },
-  { path: '**', component: NopagefoundComponent }
+  }
+
 ];
 
 export const PagesRoutingModule= RouterModule.forChild( pagesRoutes)

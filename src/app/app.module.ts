@@ -7,10 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RegisterComponent } from './register/register.component';
 
 
-//modulos
 import {PagesModule} from './pages/pages.module';
-import { GraficoauxiliarComponent } from './components/graficoauxiliar/graficoauxiliar.component';
-
 
 
 
@@ -18,8 +15,7 @@ import { GraficoauxiliarComponent } from './components/graficoauxiliar/graficoau
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
-    GraficoauxiliarComponent
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
