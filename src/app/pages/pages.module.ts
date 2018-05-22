@@ -7,6 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { PagesComponent } from './pages/pages.component';
+import { PromesasComponent } from './promesas/promesas.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
 //modulos
 import { ServiceModule  } from "../services/service.module";
@@ -16,6 +17,8 @@ import { PagesRoutingModule } from './pages.routes';
 import {IncrementadorComponent} from '../components/incrementador/incrementador.component';
 import { ChartsModule } from 'ng2-charts';
 import { GraficoDonaComponent } from '../components/graficoauxiliar/grafico-dona.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -24,7 +27,9 @@ import { GraficoDonaComponent } from '../components/graficoauxiliar/grafico-dona
     PagesComponent,
     IncrementadorComponent,
     AccountSettingsComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports:[
     DashboardComponent,
